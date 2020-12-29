@@ -9,8 +9,11 @@ namespace CompetitionSchedule.Models
     public class RaceSchedule
     {
         public int Id { get; set; }
+        [Display(Name = "Event Name")]
         public string EventName { get; set; }
+        [Display(Name = "Competition Distance(s)")]
         public string CompetitionDistances { get; set; }
+        [Display(Name = "Competition Date")]
         [DataType(DataType.Date)]
         public DateTime CompetitionDate { get; set; }
         public string Location { get; set; }

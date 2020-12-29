@@ -1,3 +1,5 @@
+using CompetitionSchedule.Data;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -24,6 +26,12 @@ namespace CompetitionSchedule
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
+
+            services.AddDbContext<RaceScheduleContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("RaceScheduleContext")));
+
+            services.AddDbContext<RaceResultContext>(options =>
+            options.UseSqlServer(Configuration.GetConnectionString("RaceResultContext")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
