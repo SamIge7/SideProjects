@@ -4,14 +4,16 @@ using CompetitionSchedule.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
-namespace CompetitionSchedule.Migrations.RaceResult
+namespace CompetitionSchedule.Migrations
 {
-    [DbContext(typeof(RaceResultContext))]
-    partial class RaceResultContextModelSnapshot : ModelSnapshot
+    [DbContext(typeof(RaceScheduleContext))]
+    [Migration("20201231172814_EventType")]
+    partial class EventType
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -19,7 +21,7 @@ namespace CompetitionSchedule.Migrations.RaceResult
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.1");
 
-            modelBuilder.Entity("CompetitionSchedule.Models.RaceResult", b =>
+            modelBuilder.Entity("CompetitionSchedule.Models.RaceSchedule", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -29,7 +31,7 @@ namespace CompetitionSchedule.Migrations.RaceResult
                     b.Property<DateTime>("CompetitionDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("CompetitionDistance")
+                    b.Property<string>("CompetitionDistances")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("EventName")
@@ -41,12 +43,9 @@ namespace CompetitionSchedule.Migrations.RaceResult
                     b.Property<string>("Location")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<decimal>("Time")
-                        .HasColumnType("decimal(2,2)");
-
                     b.HasKey("Id");
 
-                    b.ToTable("RaceResults");
+                    b.ToTable("RaceSchedules");
                 });
 #pragma warning restore 612, 618
         }

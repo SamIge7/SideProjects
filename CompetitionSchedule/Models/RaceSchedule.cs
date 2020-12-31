@@ -17,5 +17,17 @@ namespace CompetitionSchedule.Models
         [DataType(DataType.Date)]
         public DateTime CompetitionDate { get; set; }
         public string Location { get; set; }
+        [Display(Name = "Competition Type")]
+        public RaceType EventType { get; set; }
+
+        public enum RaceType
+        {
+            [Display(Name = "Open Meeting")]
+            Open,
+            [Display(Name = "Champs")]
+            Championship,
+            [Display(Name = "League Match")]
+            League
+        }
     }
 }

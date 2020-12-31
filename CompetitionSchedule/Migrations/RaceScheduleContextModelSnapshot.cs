@@ -35,6 +35,9 @@ namespace CompetitionSchedule.Migrations
                     b.Property<string>("EventName")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("EventType")
+                        .HasColumnType("int");
+
                     b.Property<string>("Location")
                         .HasColumnType("nvarchar(max)");
 

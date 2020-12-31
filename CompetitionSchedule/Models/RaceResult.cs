@@ -20,5 +20,17 @@ namespace CompetitionSchedule.Models
         public string Location { get; set; }
         [Column(TypeName = "decimal(2, 2)")]
         public decimal Time { get; set; }
+        [Display(Name = "Competition Type")]
+        public RaceType EventType { get; set; }
+
+        public enum RaceType
+        {
+            [Display(Name = "Open Meeting")]
+            Open,
+            [Display(Name = "Champs")]
+            Championship,
+            [Display(Name = "League Match")]
+            League
+        }
     }
 }

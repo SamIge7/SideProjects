@@ -4,14 +4,16 @@ using CompetitionSchedule.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace CompetitionSchedule.Migrations.RaceResult
 {
     [DbContext(typeof(RaceResultContext))]
-    partial class RaceResultContextModelSnapshot : ModelSnapshot
+    [Migration("20201231172901_EventType")]
+    partial class EventType
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
