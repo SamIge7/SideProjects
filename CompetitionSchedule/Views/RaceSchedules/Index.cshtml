@@ -4,10 +4,10 @@
     ViewData["Title"] = "Race Schedule";
 }
 
-<h1>Race Schedule</h1>
+<h1>2021 Race Schedule</h1>
 
 <p>
-    <a asp-action="Create">Add a new race</a>
+    <a asp-action="Create">Add a new race to the schedule</a>
 </p>
 <table class="table">
     <thead>
@@ -28,7 +28,7 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
+@foreach (var item in Model.OrderBy(r => r.CompetitionDate)) {
         <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.EventName)
