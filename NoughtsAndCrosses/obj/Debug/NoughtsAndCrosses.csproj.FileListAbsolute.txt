@@ -1,0 +1,15 @@
+C:\SideProjects\NoughtsAndCrosses\bin\Debug\NoughtsAndCrosses.exe.config
+C:\SideProjects\NoughtsAndCrosses\bin\Debug\NoughtsAndCrosses.exe
+C:\SideProjects\NoughtsAndCrosses\bin\Debug\NoughtsAndCrosses.pdb
+C:\SideProjects\NoughtsAndCrosses\obj\Debug\NoughtsAndCrosses.csprojAssemblyReference.cache
+C:\SideProjects\NoughtsAndCrosses\obj\Debug\MainWindow.g.cs
+C:\SideProjects\NoughtsAndCrosses\obj\Debug\App.g.cs
+C:\SideProjects\NoughtsAndCrosses\obj\Debug\NoughtsAndCrosses_MarkupCompile.cache
+C:\SideProjects\NoughtsAndCrosses\obj\Debug\NoughtsAndCrosses_MarkupCompile.lref
+C:\SideProjects\NoughtsAndCrosses\obj\Debug\MainWindow.baml
+C:\SideProjects\NoughtsAndCrosses\obj\Debug\NoughtsAndCrosses.g.resources
+C:\SideProjects\NoughtsAndCrosses\obj\Debug\NoughtsAndCrosses.Properties.Resources.resources
+C:\SideProjects\NoughtsAndCrosses\obj\Debug\NoughtsAndCrosses.csproj.GenerateResource.cache
+C:\SideProjects\NoughtsAndCrosses\obj\Debug\NoughtsAndCrosses.csproj.CoreCompileInputs.cache
+C:\SideProjects\NoughtsAndCrosses\obj\Debug\NoughtsAndCrosses.exe
+C:\SideProjects\NoughtsAndCrosses\obj\Debug\NoughtsAndCrosses.pdb
